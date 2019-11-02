@@ -24,5 +24,6 @@ button.addEventListener("click",() =>{
 
 function roll(n){
     let randomNumber = Math.floor(Math.random()*n)+1;
-    return randomNumber;
+    let diceSymbol = "&#"+(9855+randomNumber)+";";
+    return `${randomNumber} ${diceSymbol}`;
 }
